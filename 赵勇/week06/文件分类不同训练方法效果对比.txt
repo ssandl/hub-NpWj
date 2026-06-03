@@ -1,0 +1,17 @@
+文件分类不同训练方法效果对比详情见：文本分类不同训练方法效果对比.png
+
+结论:
+1.精度梯队：BERT 全量微调 ≈ LLM SFT/LoRA > BERT+LoRA > BiLSTM > TextCNN > 传统方法。
+2.小样本能力：LLM Prompt > BERT+LoRA > BERT 全量 > 传统 / CNN/LSTM；标注≤50 条优先选 Prompt 或 LoRA。
+3.速度与成本：传统方法 > TextCNN > BERT 系列 > LLM；高并发、低延迟场景首选轻量模型。
+4.数据需求匹配
+    a.少量数据（50–200 条 / 类）：传统方法、BERT+LoRA
+    b.中等数据（200–500 条 / 类）：BERT+LoRA（性价比最高）
+    c.充足数据（≥500 条 / 类）：BERT 全量微调
+    d.零标注：LLM Prompt
+5.工业最优解：BERT+LoRA，兼顾精度、速度、显存与成本，适配绝大多数业务。
+6.选型推荐：
+    a.低资源 / 快上线：传统 / TextCNN
+    b.中小数据 / 高精度：BERT+LoRA
+    c.零标注 / 冷启动：LLM Prompt
+    d复杂对话 / Agent：LLM SFT/LoRA
