@@ -1,0 +1,4 @@
+[
+    {"tokens": ["王","明","在","广","东","出","差"], "ner_tags": ["B-PER","I-PER","O","B-LOC","I-LOC","O","O"]},
+    {"tokens": ["北","京","大","学","招","生"], "ner_tags": ["B-LOC","I-LOC","B-ORG","I-ORG","O","O"]}
+]
