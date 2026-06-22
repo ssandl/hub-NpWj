@@ -1,0 +1,5 @@
+本次作业使用mps加速，只用Bert训练了数据集bq_corpus以及做了LLM生成式Zero-shot API对比，本地LLM和数据集lcqmc太大不合适在MacBook上训练，训练结论如下：
+1.三种Bert方法在数据集bq_corpus的validation上均达到85%–88%，明显高于md文档的数据集afqmc基准（67%–69%）；
+2.CrossEncoder最优（87.98%），与md文档中数据集afqmc上的结论一致；
+3.Cosine略优于Triplet（86.31% vs 85.59%），与数据集afqmc中Cosine更稳的现象一致；
+4.Qwen-plus API zero-shot在100条样本上Accuracy为73%，正例F1为0.37，无需训练但明显低于Bert。
