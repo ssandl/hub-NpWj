@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "afqmc",
+    "method": "biencoder_cosine",
+    "method_label": "BiEncoder + CosineEmbeddingLoss",
+    "log_path": "outputs/experiments/afqmc/biencoder_cosine/biencoder_cosine_log.json",
+    "epoch": 3,
+    "val_acc": 0.6774791473586654,
+    "val_f1": 0.6756791670796526,
+    "threshold": 0.52,
+    "elapsed_s": 250.84602904319763,
+    "ckpt_path": "outputs/experiments/afqmc/biencoder_cosine/biencoder_cosine_best.pt"
+  },
+  {
+    "dataset": "afqmc",
+    "method": "biencoder_triplet",
+    "method_label": "BiEncoder + TripletLoss",
+    "log_path": "outputs/experiments/afqmc/biencoder_triplet/biencoder_triplet_log.json",
+    "epoch": 3,
+    "val_acc": 0.6638090824837812,
+    "val_f1": 0.6600997805409766,
+    "threshold": 0.81,
+    "elapsed_s": 118.32393789291382,
+    "ckpt_path": "outputs/experiments/afqmc/biencoder_triplet/biencoder_triplet_best.pt"
+  },
+  {
+    "dataset": "afqmc",
+    "method": "crossencoder",
+    "method_label": "CrossEncoder + CrossEntropyLoss",
+    "log_path": "outputs/experiments/afqmc/crossencoder/crossencoder_log.json",
+    "epoch": 3,
+    "val_acc": 0.6911492122335496,
+    "val_f1": 0.6656972123488949,
+    "threshold": null,
+    "elapsed_s": 261.71388006210327,
+    "ckpt_path": "outputs/experiments/afqmc/crossencoder/crossencoder_best.pt"
+  },
+  {
+    "dataset": "lcqmc",
+    "method": "biencoder_cosine",
+    "method_label": "BiEncoder + CosineEmbeddingLoss",
+    "log_path": "outputs/experiments/lcqmc/biencoder_cosine/biencoder_cosine_log.json",
+    "epoch": 3,
+    "val_acc": 0.7859577368779823,
+    "val_f1": 0.7858275660904049,
+    "threshold": 0.8,
+    "elapsed_s": 1651.6765403747559,
+    "ckpt_path": "outputs/experiments/lcqmc/biencoder_cosine/biencoder_cosine_best.pt"
+  },
+  {
+    "dataset": "lcqmc",
+    "method": "biencoder_triplet",
+    "method_label": "BiEncoder + TripletLoss",
+    "log_path": "outputs/experiments/lcqmc/biencoder_triplet/biencoder_triplet_log.json",
+    "epoch": 3,
+    "val_acc": 0.8175414678482164,
+    "val_f1": 0.8171917192420302,
+    "threshold": 0.75,
+    "elapsed_s": 1515.6782870292664,
+    "ckpt_path": "outputs/experiments/lcqmc/biencoder_triplet/biencoder_triplet_best.pt"
+  },
+  {
+    "dataset": "lcqmc",
+    "method": "crossencoder",
+    "method_label": "CrossEncoder + CrossEntropyLoss",
+    "log_path": "outputs/experiments/lcqmc/crossencoder/crossencoder_log.json",
+    "epoch": 3,
+    "val_acc": 0.858214042263122,
+    "val_f1": 0.8581734026456626,
+    "threshold": null,
+    "elapsed_s": 1784.36523103714,
+    "ckpt_path": "outputs/experiments/lcqmc/crossencoder/crossencoder_best.pt"
+  },
+  {
+    "dataset": "bq_corpus",
+    "method": "biencoder_cosine",
+    "method_label": "BiEncoder + CosineEmbeddingLoss",
+    "log_path": "outputs/experiments/bq_corpus/biencoder_cosine/biencoder_cosine_log.json",
+    "epoch": 3,
+    "val_acc": 0.8593967517401392,
+    "val_f1": 0.8591221612066933,
+    "threshold": 0.63,
+    "elapsed_s": 511.6906142234802,
+    "ckpt_path": "outputs/experiments/bq_corpus/biencoder_cosine/biencoder_cosine_best.pt"
+  },
+  {
+    "dataset": "bq_corpus",
+    "method": "biencoder_triplet",
+    "method_label": "BiEncoder + TripletLoss",
+    "log_path": "outputs/experiments/bq_corpus/biencoder_triplet/biencoder_triplet_log.json",
+    "epoch": 3,
+    "val_acc": 0.8578886310904872,
+    "val_f1": 0.8578709500726972,
+    "threshold": 0.54,
+    "elapsed_s": 371.78387808799744,
+    "ckpt_path": "outputs/experiments/bq_corpus/biencoder_triplet/biencoder_triplet_best.pt"
+  },
+  {
+    "dataset": "bq_corpus",
+    "method": "crossencoder",
+    "method_label": "CrossEncoder + CrossEntropyLoss",
+    "log_path": "outputs/experiments/bq_corpus/crossencoder/crossencoder_log.json",
+    "epoch": 3,
+    "val_acc": 0.8834106728538283,
+    "val_f1": 0.8834073165546567,
+    "threshold": null,
+    "elapsed_s": 527.5151538848877,
+    "ckpt_path": "outputs/experiments/bq_corpus/crossencoder/crossencoder_best.pt"
+  }
+]
