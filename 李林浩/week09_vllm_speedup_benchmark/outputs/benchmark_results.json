@@ -1,0 +1,361 @@
+{
+  "assignment": "第九周作业：尝试部署一个VLLM大模型服务，验证速度提升",
+  "note": "本文件为课程作业样例输出格式，实际运行结果会因机器环境和模型配置而变化。",
+  "speedup_tokens_per_s": 3.6349,
+  "summary_table": [
+    {
+      "engine": "Transformers baseline",
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "num_requests": 16,
+      "concurrency": 1,
+      "success_rate": 1.0,
+      "wall_time_s": 162.54,
+      "total_completion_tokens": 2048,
+      "throughput_tokens_per_s": 12.6,
+      "requests_per_s": 0.0984,
+      "avg_latency_s": 8.91,
+      "p50_latency_s": 8.74,
+      "p95_latency_s": 10.82
+    },
+    {
+      "engine": "vLLM service",
+      "model": "week09-qwen",
+      "num_requests": 32,
+      "concurrency": 8,
+      "success_rate": 1.0,
+      "wall_time_s": 89.43,
+      "total_completion_tokens": 4096,
+      "throughput_tokens_per_s": 45.8,
+      "requests_per_s": 0.3578,
+      "avg_latency_s": 2.71,
+      "p50_latency_s": 2.64,
+      "p95_latency_s": 3.39
+    }
+  ],
+  "raw_results": {
+    "transformers_baseline": {
+      "summary": {
+        "engine": "Transformers baseline",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "num_requests": 16,
+        "concurrency": 1,
+        "success_rate": 1.0,
+        "wall_time_s": 162.54,
+        "total_completion_tokens": 2048,
+        "throughput_tokens_per_s": 12.6,
+        "requests_per_s": 0.0984,
+        "avg_latency_s": 8.91,
+        "p50_latency_s": 8.74,
+        "p95_latency_s": 10.82
+      },
+      "requests": [
+        {
+          "ok": true,
+          "latency_s": 8.2,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 8.62,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.04,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.46,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.88,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 8.2,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 8.62,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.04,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.46,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.88,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 8.2,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 8.62,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.04,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.46,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 9.88,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 8.2,
+          "completion_tokens": 128,
+          "error": null
+        }
+      ]
+    },
+    "vllm_service": {
+      "summary": {
+        "engine": "vLLM service",
+        "model": "week09-qwen",
+        "num_requests": 32,
+        "concurrency": 8,
+        "success_rate": 1.0,
+        "wall_time_s": 89.43,
+        "total_completion_tokens": 4096,
+        "throughput_tokens_per_s": 45.8,
+        "requests_per_s": 0.3578,
+        "avg_latency_s": 2.71,
+        "p50_latency_s": 2.64,
+        "p95_latency_s": 3.39
+      },
+      "requests": [
+        {
+          "ok": true,
+          "latency_s": 2.1,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.27,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.44,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.61,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.78,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.95,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.12,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.29,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.1,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.27,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.44,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.61,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.78,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.95,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.12,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.29,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.1,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.27,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.44,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.61,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.78,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.95,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.12,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.29,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.1,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.27,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.44,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.61,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.78,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 2.95,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.12,
+          "completion_tokens": 128,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_s": 3.29,
+          "completion_tokens": 128,
+          "error": null
+        }
+      ]
+    }
+  }
+}

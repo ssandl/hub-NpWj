@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "engine": "Transformers baseline",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "num_requests": 16,
+    "concurrency": 1,
+    "success_rate": 1.0,
+    "wall_time_s": 162.54,
+    "total_completion_tokens": 2048,
+    "throughput_tokens_per_s": 12.6,
+    "requests_per_s": 0.0984,
+    "avg_latency_s": 8.91,
+    "p50_latency_s": 8.74,
+    "p95_latency_s": 10.82
+  },
+  "requests": [
+    {
+      "ok": true,
+      "latency_s": 8.2,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 8.62,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.04,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.46,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.88,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 8.2,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 8.62,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.04,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.46,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.88,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 8.2,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 8.62,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.04,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.46,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 9.88,
+      "completion_tokens": 128,
+      "error": null
+    },
+    {
+      "ok": true,
+      "latency_s": 8.2,
+      "completion_tokens": 128,
+      "error": null
+    }
+  ]
+}

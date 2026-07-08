@@ -1,0 +1,3 @@
+﻿engine,model,num_requests,concurrency,success_rate,wall_time_s,total_completion_tokens,throughput_tokens_per_s,requests_per_s,avg_latency_s,p50_latency_s,p95_latency_s
+Transformers baseline,Qwen/Qwen2.5-0.5B-Instruct,16,1,1.0,162.54,2048,12.6,0.0984,8.91,8.74,10.82
+vLLM service,week09-qwen,32,8,1.0,89.43,4096,45.8,0.3578,2.71,2.64,3.39
